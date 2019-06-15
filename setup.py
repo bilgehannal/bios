@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'bios',         # How you named your package folder (MyLib)
   packages = ['bios'],   # Chose the same as "name"
-  version = '0.0.1',      # Start with a small number and increase it with every change you make
+  version = '0.0.2',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'bios is a library which helps you to read and write data to determined type of files.',   # Give a short description about your library
   author = 'Bilgehan NAL',                   # Type in your name
