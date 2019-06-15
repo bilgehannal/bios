@@ -1,3 +1,3 @@
 from . import base
-from operations.standart_io import StandartIO
-from operations.csv_io import CsvIO
+from bios.operations.standart_io import StandartIO
+from bios.operations.csv_io import CsvIO
