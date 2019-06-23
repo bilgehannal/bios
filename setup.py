@@ -1,10 +1,19 @@
 from distutils.core import setup
+from os import path
+
+# read the contents of your README file
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
   name = 'bios',         # How you named your package folder (MyLib)
   packages = ['bios', 'bios.operations'],   # Chose the same as "name"
   version = '0.0.8',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'bios is a library which helps you to read and write data to determined type of files.',   # Give a short description about your library
+  long_description=long_description,
+  long_description_content_type='text/markdown'
   author = 'Bilgehan NAL',                   # Type in your name
   author_email = 'bilgehannal@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/bilgehannal/bios',   # Provide either the link to your github or to your website
