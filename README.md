@@ -38,17 +38,20 @@ You can read the file using read function of bios. If you will not give any file
 	# Tyoe of content4 is list
 
 - ##### Standart File
+
 You can read the content of a file and assign it into a string.
 
     content = bios.read('file.txt', file_type='standart')
 
 - ##### JSON File
+
 You can read the content of a JSON file and assign it into a dict or list object.
 
     content = bios.read('file.json', file_type='json')
 
 Type of the content could be 'list' or 'dict'
 - ##### YAML File
+
 You can read the content of a YAML file and assign it into a dict or list object.
 
     content = bios.read('file.yaml', file_type='yaml')
@@ -56,10 +59,12 @@ You can read the content of a YAML file and assign it into a dict or list object
 
 Type of the content could be 'list' or 'dict'
 - ##### CSV File
+
 You can read the content of a CSV file and assign it into a list. Default delimiter is comma ' , '.
 
     content = bios.read('file.json', file_type='csv')
 	content = bios.read('file.json', file_type='csv', delimiter=';')
+
 Type of the content could be 'list'
 
 #### Writing
@@ -84,20 +89,24 @@ You can write a string object to any file giving a file type as 'standart'
      bios.write('file.txt', data, file_type='standart')
 
 - ##### JSON File
+
 You can write a list or dict object to any file giving a file type as 'json'
 
      bios.write('file.json', data, file_type='json')
      
 - ##### YAML File
+
 You can write a list or dict object to any file giving a file type as 'yaml' or 'yml'
 
      bios.write('file.yml', data, file_type='yaml')
      
 - ##### CSV File
+
 You can write a list object to any file giving a file type as 'standart'
 
      bios.write('file.csv', data, file_type='csv')
      bios.write('file.csv', data, file_type='csv', delimiter=';')
+
 You can use the parameter of 'delimiter' for separating the contents from each other.
      
 #### Appending
@@ -107,15 +116,18 @@ You can append or add a content to an existing file. This function is available 
     bios.append('file.txt', data, line=2)
     bios.append('file.txt', data, delimiter=';')
     bios.append('file.csv', data, line=2, delimiter=';')
+    
 Line is assumed that starting from the value of 1
 
 - ##### Standart File
+
 You can append a string object to a existing or nonexistent file. If you don't give a line parameter, bios would append the content after the end of the file.
 
      bios.append('file.txt', data, file_type='standart')
      bios.append('file.txt', data, file_type='standart', line=2)
 
 - ##### CSV File
+
 You can append a list object to a existing or nonexistent file. If you don't give a line parameter, bios would append the content after the end of the file.
 
      bios.append('file.csv', data, file_type='csv')
@@ -128,3 +140,4 @@ You can append a list object to a existing or nonexistent file. If you don't giv
     second_row = content[1]
     for single_column in second_row:
 	    print(single_column)
+  
