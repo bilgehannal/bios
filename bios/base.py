@@ -93,7 +93,9 @@ append_functions[STANDART_FILES[0]] = append_standart
 def append_csv(file_name, data, line, delimiter):
     io_object = CsvIO()
     io_object.append(file_name, data, line, delimiter)
-append_functions[CSV_FILES[0]] = append_standart
+append_functions[CSV_FILES[0]] = append_csv
+append_functions[JSON_FILES[0]] = append_standart
+append_functions[YAML_FILES[0]] = append_standart
 
 # Main Function
 def append(file_name, data, file_type='none', line=0, delimeter=','):
